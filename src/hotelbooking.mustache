@@ -1,0 +1,23 @@
+<!-- PARTIAL: header -->
+<title>{{title}}</title>
+{{#minify}}
+<link href="{{relativeRootPath}}/styles/main.min.css" rel="stylesheet">
+{{/minify}}
+{{^minify}}
+<link href="{{relativeRootPath}}/styles/main.css" rel="stylesheet">
+{{/minify}}
+<!-- END PARTIAL -->
+
+<!-- PARTIAL: body -->
+<div id="container"></div>
+<!-- END PARTIAL -->
+
+<!-- PARTIAL: footer -->
+{{#minify}}
+<script src="{{relativeRootPath}}/scripts/hotelbooking.min.js" type="module"></script>
+{{/minify}}
+{{^minify}}
+<script src="{{relativeRootPath}}/scripts/hotelbooking.js" type="module"></script>
+{{/minify}}
+<!-- END PARTIAL -->
+ 

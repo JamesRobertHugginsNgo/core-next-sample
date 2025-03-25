@@ -1,0 +1,16 @@
+{
+  "name": "core-next-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "core-next": "github:JamesRobertHugginsNgo/core-next#feature/refactor"
+  },
+  "type": "module"
+}
