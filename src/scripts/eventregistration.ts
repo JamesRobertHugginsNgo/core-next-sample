@@ -5,7 +5,7 @@ const definition: BuildFormDefinition = {
 	submitLabel: 'Register',
 
 	action: 'https://echo.free.beeceptor.com/register-event',
-	method: 'post',
+	method: 'POST',
 
 	sections: [
 		{

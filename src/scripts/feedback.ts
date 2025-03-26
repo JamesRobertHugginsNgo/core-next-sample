@@ -5,7 +5,7 @@ const definition: BuildFormDefinition = {
 	submitLabel: 'Send Feedback',
 
 	action: 'https://echo.free.beeceptor.com/submit-feedback',
-	method: 'post',
+	method: 'POST',
 
 	sections: [
 		{

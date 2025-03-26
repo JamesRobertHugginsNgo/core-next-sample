@@ -13,6 +13,9 @@ export const {
 	build_minify,
 	watch,
 	serve
-} = gulpfileHelper('./src', './dist');
+} = gulpfileHelper({
+	srcPath: './src',
+	distPath: './dist'
+});
 
 export default build;

@@ -5,7 +5,7 @@ const definition: BuildFormDefinition = {
 	submitLabel: 'Place Order',
 
 	action: 'https://echo.free.beeceptor.com/complete-purchase-json',
-	method: 'post',
+	method: 'POST',
 
 	submitAsJson: true,
 	submitAsJsonSuccessUrl: './thank-you.html',

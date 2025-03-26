@@ -2,10 +2,11 @@ import buildForm, { BuildFormDefinition, BuildFormOptions } from 'core-next/src/
 
 const definition: BuildFormDefinition = {
 	title: 'Job Application Form',
-	submitLabel: 'Submit',
+	submitLabel: 'Submit Application',
 
 	action: 'https://echo.free.beeceptor.com/apply-job',
-	method: 'post',
+	enctype: 'multipart/form-data',
+	method: 'POST',
 
 	sections: [
 		{
@@ -26,8 +27,38 @@ const definition: BuildFormDefinition = {
 							required: true
 						}
 					]
+				},
+				{
+					fields: [
+						{
+							title: 'Position Applying For',
+							id: 'position',
+							name: 'position',
+							required: true
+						}
+					]
+				},
+				{
+					fields: [
+						{
+							type: 'file',
+							title: 'Upload Resume',
+							id: 'resume',
+							name: 'resume',
+							required: true
+						}
+					]
+				},
+				{
+					fields: [
+						{
+							type: 'textarea',
+							title: 'Cover Letter',
+							id: 'coverLetter',
+							name: 'coverLetter'
+						}
+					]
 				}
-				
 			]
 		}
 	]
